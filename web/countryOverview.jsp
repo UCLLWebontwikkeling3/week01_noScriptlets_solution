@@ -10,16 +10,16 @@
     <title>Countries</title>
 </head>
 <body>
-<header role="banner">
-    <img alt="Toscane" src="images/toscaneRibbon.jpg">
-</header>
+
+<jsp:include page="header.jsp">
+    <jsp:param name="title" value="Countries"/>
+</jsp:include>
 
 <main id="container">
     <p>
         <a href="index.html">Home</a>
     </p>
     <article>
-        <h1>Countries</h1>
         <c:if test="${popular != null}">
             <p>
                 The most popular country is
@@ -37,8 +37,8 @@
                 <c:forEach var="country" items="${countries}">
                     <tr>
                         <td>${country.name}</td>
-                        <td
-                            ${country.capital}</td>
+                        <td>
+                                ${country.capital}</td>
                         <td class="getal">${country.numberInhabitants}</td>
                         <td class="getal">${country.votes}</td>
                     </tr>

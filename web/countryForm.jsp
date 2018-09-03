@@ -9,13 +9,11 @@
     <title>Countries</title>
 </head>
 <body>
-<header role="banner">
-    <img alt="Toscane" src="images/toscaneRibbon.jpg">
-</header>
-
+<jsp:include page="header.jsp">
+    <jsp:param name="title" value="New Country"/>
+</jsp:include>
 <main id="container">
     <article>
-        <h1>New Country</h1>
         <form method="POST" action="Controller">
 
             <c:if test="${result!=null}">
