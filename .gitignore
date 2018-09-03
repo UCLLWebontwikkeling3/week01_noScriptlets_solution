@@ -108,3 +108,6 @@ target/
 
 # End of https://www.gitignore.io/api/java-web,intellij
 .idea/workspace.xml
+.idea/workspace.xml
+.idea/artifacts/noScriptlets_solution_war_exploded.xml
+noScriptlets_solution.iml
